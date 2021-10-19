@@ -1,0 +1,26 @@
+#include <iostream>
+
+
+int main() {
+	int module = 0;
+	int markinput = 0;
+	int mark = 0;
+	int input = 0;
+	int grades = 0;
+	int avg = 0;
+
+	std::cout << "Please enter module code: ";
+	std::cin >> module;
+
+	while (input != -1)
+	{
+		grades = grades + 1;
+		std::cout << "Please enter mark: ";
+		std::cin >> markinput;
+		mark = mark + markinput;
+		std::cout << "Please enter any number to continue or -1 to exit: ";
+		std::cin >> input;
+	}
+	avg = mark/grades;
+	std::cout << "Average coursework mark: " << avg << "\n";
+}
