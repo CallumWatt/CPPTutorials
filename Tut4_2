@@ -1,0 +1,26 @@
+#include <iostream>
+
+int age;
+double cost;
+int members;
+
+int main() {
+	while (age != -1) {
+		if (age < 16) {
+			cost = cost + 2.50;
+			members++;
+		}
+		else if (age < 65) {
+			cost = cost + 5;
+			members++;
+		}
+
+		else { (cost + 3); }
+		
+
+		std::cout << "Please input an age or type -1 to exit: ";
+		std::cin >> age;
+	}
+	std::cout << "Number of members: " << members << "\n";
+	std::cout << "Total cost: " << cost << "\n";
+}
